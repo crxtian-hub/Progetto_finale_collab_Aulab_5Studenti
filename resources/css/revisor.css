@@ -1,0 +1,52 @@
+.btn_revisor {
+    background-color: rgba(166, 16, 34);
+    color: white;
+    border: 1px solid rgba(166, 16, 34);
+    border-radius: 20px;
+    box-shadow: 11px 14px 30px 0px #343434;
+    padding: 10px 15px;
+}
+
+
+.btn_revisor2 {
+    background-color: rgba(0, 128, 0);
+    color: white;
+    border: 1px solid rgba(0, 128, 0);
+    border-radius: 20px;
+    box-shadow: 11px 14px 30px 0px #343434;
+    padding: 10px 15px;
+}
+
+.btn_revisor:hover {
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+.btn_back {
+    display: flex;
+    color: white;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: var(--colorbtn);
+    font-size: 1.0em;
+    font-weight: 550;
+    text-decoration: none;
+  }
+  
+  .btn_back:hover {
+    transition: 1s;
+    background: var(--blue);
+    color: var(--colorbtn);
+  }
+.btn_revisor2:hover {
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+    .img-fluid {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 10px;
+    }
+
+}

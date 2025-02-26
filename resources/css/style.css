@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=League+Spartan:wght@100..900&family=Raleway:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/typo-round-regular-demo');
+
+/*
+JOSEFIN
+font-family: "Josefin Sans", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+
+RALEWAY
+font-family: "Raleway", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+
+LEAGUE SPARTAN
+font-family: "League Spartan", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+/
+
+/ font-family: 'Typo Round', sans-serif;
+font-family: 'Typo Round Regular Demo', sans-serif;
+font-family: 'Typo Round Thin Demo', sans-serif;
+font-family: 'Typo Round Light Demo', sans-serif;
+font-family: 'Typo Round Bold Demo', sans-serif; */
+
+:root{
+    --blue: #A4C8D4;
+    --hoverBlue: #75929d;
+    --bgallsite: #ebebeb;
+    --colorbtn: #2C3E50;
+    --hover: #D4AF37;
+    --colortext: #1C1C1C;
+    --secondary: #FFF5EE;
+}
+
+.color-main{
+    color: var(--blue);
+}
+
+.text-blue{
+    color: var(--colorbtn);
+}
+
+body{
+    background-color: var(--bgallsite);
+    /* min-height: 112vh; */
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+h1{
+    font-family: "League Spartan";
+    font-weight: bold;
+    font-size: 34px;
+    /* color: var(--colortext); */
+}
+
+h3 {
+    font-family: "Raleway";
+    font-size: 27px;
+    color: white;
+}
+.nav_style {
+    color: var(--colortext);
+    text-decoration: none;
+}
+
+.alert{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.img-preview{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+}
+
+
+.imgCarosello{
+    object-fit: cover;
+    height: auto;
+    width: 300px;
+}
+
+.carousel{
+width: 800px;
+}
+
+
+
+.page-link.active, .active > .page-link {
+    z-index: 3;
+    color: white;
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+    font-size: var(--bs-pagination-font-size);
+    color: #2C3E50;
+    text-decoration: none;
+    background-color: var(--bs-pagination-bg);
+    border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+*{
+    font-family: "Raleway", serif;
+}
+
+

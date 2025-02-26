@@ -1,0 +1,15 @@
+@import 'bootstrap';
+@import './style.css';
+@import './auth.css';
+@import './navbar.css';
+@import './header.css';
+@import './footer.css';
+@import './card.css';
+@import './forms.css';
+@import './category.css';
+@import './revisor.css';
+@import 'bootstrap-icons';
+@import './question.css';
+@import './about.css';
+@import './show.css';
+@import './edit.css';

@@ -1,0 +1,172 @@
+.card {
+    width: 300px;
+    height: 350px;
+    padding: .8em;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0px 0px 15px 4px var(--blue); 
+    margin: 20px;
+    transition: 0.3s;
+    background:	var(--secondary);
+    border: 2px solid var(--blue);
+}
+
+
+/*Hover*/
+.card:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0px 0px 15px 4px var(--blue);
+    transform: translateY(-20px);
+}
+
+/* .cardContainer{
+
+} */
+
+.card-img {
+    object-fit: cover;
+    height: 40%;
+    width: 100%;
+    border-radius: 20%;
+    transition: .3s ease;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+/*Button*/
+.card-button {
+    border: 1px solid var(--blue);
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+    
+}
+
+
+.card-button:hover {
+    border-radius: 0;
+    border: 1px solid var(--blue);
+}
+
+
+/* button create */
+.createButton{
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    transition: .2s;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 230px;
+}
+
+.createButton:hover{
+    background-color: var(--hoverBlue);
+    color: white;
+}
+
+.createButton:focus{
+    background-color: var(--hoverBlue)!important;
+    border: 0!important;
+    width: 120% !important;
+    color: white;
+}
+
+.articleTitle{
+    margin-top: 140px;
+}
+
+.imgCardTop{
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+.text-body {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.btnCard{
+    color: white;
+    background-color: var(--colorbtn);
+    border: 1px solid var(--blue);
+    width: 120px;
+    height: 55px;
+    font-size: 12px;
+    transition: .2s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCardEdit{
+    color: #D4AF37;;
+    background:	var(--secondary);
+    border: 1px solid #D4AF37;
+    width: 120px;
+    height: 55px;
+    font-size: 12px;
+    transition: .2s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCardEdit:hover{
+    background: #D4AF37;
+    color:	var(--secondary);
+    border: 1px solid #D4AF37;
+}
+
+
+.btnCard:hover{
+    background-color: var(--blue);
+    border: 1px solid var(--colorbtn);
+}
+
+.btnReview{
+    stroke:#D4AF37;
+    border-radius: 50%;
+    width: 35px;
+    height: 32px;
+    border: 1px solid #D4AF37;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.btnReview:hover{
+    stroke: white;
+border-radius: 0;
+background-color: #D4AF37;
+}

@@ -1,0 +1,23 @@
+.btn_upload {
+  background-color: var(--blue);
+  color: white;
+  border: 1px solid var(--blue);
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+.btn_upload:hover{
+  background-color: var(--hoverBlue);
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .container_create_article {
+      width: 100% !important; 
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+  }
+
+  .form_article {
+      width: 130% !important;
+      margin-left: -15% !important; 
+  }
+}

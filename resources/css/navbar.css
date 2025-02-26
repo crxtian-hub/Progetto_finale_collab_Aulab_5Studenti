@@ -1,0 +1,170 @@
+.navbar-light .navbar-nav .nav-text {
+  color: #000;
+
+}
+
+.dropdown-item {
+  --bs-dropdown-link-active-bg: #75929d;
+  text-transform: capitalize;
+}
+
+.nav-text {
+  display: inline-block;
+  position: relative;
+  font-family: "Josefin Sans", serif;
+}
+
+
+.nav_style {
+  color: var(--colortext);
+  text-decoration: none;
+}
+
+.nav-text1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-text1:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar {
+  transition: 0.3s ease;
+  width: 100%;
+  transition: .5s;
+  z-index: 1000;
+
+}
+
+.fixed {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  background-color: rgba(234, 234, 234);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Aggiungi z-index se necessario */
+  z-index: 1000;
+  border-radius: 40px;
+}
+
+#navbar {
+  transition: .4s;
+}
+
+.preNavbar {
+  height: 40px;
+  align-self: center;
+  border-bottom: 1px solid black;
+}
+
+.regPreNavbar {
+  text-decoration: none;
+  color: black;
+  transform: translateY(2px);
+}
+
+.navbar.blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+a,
+button {
+  font-family: "Josefin Sans", serif;
+}
+
+.dropdown-menu.show {
+  display: block;
+  z-index: 1000;
+}
+
+.notificaRevisor {
+  background-color: var(--colorbtn);
+}
+
+/* CONTAINER ACCEDI E REGISTRAZIONE  */
+.login-register-container {
+  display: flex;
+
+}
+/* BOTTONE ACCEDI  */
+.buttonacc {
+  display: flex;
+  color: white;
+  border-radius: 45px;
+  cursor: pointer;
+  background: var(--colorbtn);
+  font-size: 1.0em;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.buttonacc:hover {
+  transition: 1s !important;
+  background: var(--blue);
+  color: var(--colorbtn);
+}
+
+/* BOTTONE REGISTRATI */
+.buttonreg {
+  display: flex;
+  margin-top: 0px;
+  color: var(--colorbtn);
+  border-radius: 20px;
+  cursor: pointer;
+  background: var(--blue);
+  font-size: 1.0em;
+  font-weight: 550;
+  text-decoration: none;
+}
+
+.buttonreg:hover {
+  transition: 1s !important;
+  background: var(--colorbtn);
+  color: white
+}
+.btn_lang {
+  background-color: var(--bgallsite);
+  color: var(--colorbtn);
+  border: 1px solid var(--colorbtn);
+  border-radius: 20px;
+  padding: 7px 10px;
+}
+
+.lang_text {
+  text-decoration: none;
+  color: var(--colortext);
+}
+/* MEDIA QUERY BOTTONI REGISTRATI ACCEDI */
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .login-register-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    width: 100%;
+  }
+
+  .navbar-nav .buttonacc,
+  .navbar-nav .buttonreg {
+    flex: 1;
+    max-width: 150px; 
+    text-align: center;
+    padding: 10px 15px;
+    white-space: nowrap; 
+  }
+}

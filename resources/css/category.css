@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    .category {
+        display: none;
+    }
+}
+
+.category2:hover {
+    border: 1px solid var(--colorbtn);
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}

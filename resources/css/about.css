@@ -1,0 +1,129 @@
+.container_about {
+  display: flex;
+  justify-content: center !important;
+}
+.card_about {
+    width: 17em;
+    height: 22.5em;
+    background: var(--colortext);
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 70px;
+  }
+  
+  .card_about span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .card_about .info_about {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+  }
+  
+  .card_about .img_about {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    background-image: url(/public/img/aLE.png);
+    background-size: cover;
+  }
+
+  .card_about .img_about2 {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    background-image: url(/public/img/Cri.png);
+    background-size: cover;
+  }
+
+  .card_about .img_about3 {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    background-image: url(/public/img/Samuele.png);
+    background-size: cover;
+  }
+
+  .card_about .img_about4 {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    background-image: url(/public/img/Matteo.png);
+    background-size: cover;
+  }
+
+  .card_about .img_about5 {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+    background-image: url(/public/img/Luca.png);
+    background-size: cover;
+  }
+  
+  .card_about .share_about {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .card_about a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .card_about a:hover {
+    color: var(--blue);
+  }
+  
+  .card_about .button_about {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: var(--colortext);
+    transition: .4s ease-in-out;
+  }
+  
+  .card_about .button_about:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .container_about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}

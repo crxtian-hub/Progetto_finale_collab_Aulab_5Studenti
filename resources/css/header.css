@@ -1,0 +1,176 @@
+header{
+  box-shadow: 0px 15px 20px 5px rgba(36, 36, 36, 0.85);
+}
+
+.img_header {
+  background-image: url('/public/img/Header.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  
+  
+}
+
+/* Contenitore della barra di ricerca */
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto; 
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+/* Barra di ricerca */
+.search-input {
+  width: 100%;
+  max-width: 500px; 
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: width 0.3s ease;
+}
+
+/* Pulsante di ricerca */
+.search-icon {
+  position: absolute;
+  right: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Quando la barra di ricerca è in focus */
+.search-input:focus {
+  border-color: var(--colorbtn);
+  box-shadow: none;
+}
+
+/* Per il pulsante di ricerca rotondo */
+.btn-search {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background: var(--colorbtn);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.annuncio{
+  border-radius: 22px;
+  transform: translateY(45%)translateX(57%);
+  margin-left: 0px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  max-width: 500px;
+  height: 420px;
+}
+
+.container.annuncio h1,
+.container.annuncio h3 {
+  margin: 0;
+  /* Spaziatura tra gli elementi */
+  padding: 10px 0;
+}
+
+.buttonAddArticle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  background-color: var(--colorbtn);
+  color: white;
+  gap: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 13px 10px 20px 3px #363636;
+  border: solid 1px #363636;
+}
+.textButton {
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.svg {
+  padding-top: 5px;
+  height: 100%;
+  width: fit-content;
+}
+.svg svg {
+  width: 50px;
+  height: 30px;
+}
+/* .buttonAddArticle:hover {
+  border: 8px solid #b1d8ff;
+  background-color: color(#75929d);
+} */
+.buttonAddArticle:active {
+  border: 5px solid #c0dfff;
+}
+.buttonAddArticle:hover .svg svg {
+  animation: jello-vertical 0.9s both;
+  transform-origin: left;
+}
+
+.linkCustom{
+  text-decoration: none;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .img_header {
+    background-position: 58% 50%;
+  }
+  .annuncio{
+    transform: translateY(20%)translateX(5%);
+      width: 350px;
+      height: 460px;
+    } 
+    .buttonAddArticle {
+      padding: 13px 30px;
+    }
+    .textButton {
+      font-size: 15px;
+    }
+}
+
+
+
+
+
